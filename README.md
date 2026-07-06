@@ -14,7 +14,7 @@ Black boxes track a lot of data about planes so they can be consulted in the eve
 By using the micropyGPS package, I'm able to sort the NASM-formatted data that the GPS connected to the Pi gives me into much more readable data, which is then written to files. There are 3 files, one for latitude, one for longitude, and one for altitude.
 
 # Why does this matter?
-This project more than anything is a proof of concept. As I don't have access to a Pi with wireless capabilites currently, I'm not able to build a tracker, so instead I'm building everything I would need for one.
+This project more than anything is a proof of concept. As I don't have access to a Pi with wireless capabilites currently, I'm not able to build a tracker, so instead I'm building everything I would need for one. It also sort of acts like a physical Strava tracker that you can see bike distance and length with (or whatever method of transportation you're tracking).
 
 # Future Ideas
 I may add speed information with a gyro sensor that the kit also had. I also have a case in the process of being 3D printed, which looks like this:
