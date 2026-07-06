@@ -9,7 +9,6 @@ parser = MicropyGPS()
 lat = []
 long = []
 alt = []
-fast = []
 
 while True:
     if uart.any():
@@ -34,8 +33,20 @@ while True:
                 print(long)
                 alt.append(parser.altitude)
                 print(alt)
-                fast.append(parser.speed[2])
-                print(fast)
             else:
-                continue
+                lat.pop(0)
+                long.pop(0)
+                alt.pop(0)
+            with open("latitude_data.txt", "w") as f:
+                for value in lat:
+                    f.write(f"{value}\n")
+            with open("longitude_data.txt", "w") as f:
+                for val in lat:
+                    f.write(f"{value}\n")
+            with open("altitude_data.txt", "w") as f:
+                for val in lat:
+                    f.write(f"{value}\n")
+                    
+        time.sleep(3)
+                    
         
